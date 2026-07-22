@@ -1,0 +1,10 @@
+---
+description: How to add ebooks and keep CityU brand; no maintainer notes in public UI
+alwaysApply: true
+---
+
+# CityU Guides site
+
+- Public UI must not include developer instructions (e.g. “drop files into ebooks/”). Those belong in `README.md` / `AGENTS.md`.
+- Brand colors and fonts: follow `AGENTS.md` (CityU dark blue, teal, Oswald + Avenir).
+- New ebooks: add file under `site/ebooks/`, optional cover under `site/ebooks/covers/`, then append to `site/catalog.json`.

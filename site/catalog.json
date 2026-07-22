@@ -1,0 +1,47 @@
+{
+  "brand": {
+    "name": "CityU Guides",
+    "tagline": "Practical resources for students, partners, and career changers."
+  },
+  "gate": {
+    "formEmbedUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfePjI7Ugl6aEcTdF1L-RJe--2LShxpAJgROleGThBqZ3GkBg/viewform?embedded=true",
+    "formShareUrl": "https://forms.gle/LaEY1GUvLLZEyAtQ6",
+    "title": "Download your free guide",
+    "subtitle": "Fill out the short form below for instant access. We use your details to share relevant programs and partnership opportunities."
+  },
+  "books": [
+    {
+      "id": "ai-skills-2027",
+      "title": "AI Skills Every IT Professional Needs by 2027",
+      "subtitle": "School of Technology and Computing",
+      "description": "A research-backed guide to the capabilities reshaping IT careers — AI literacy, MLOps, RAG, cybersecurity, cloud, governance — and how to build them.",
+      "file": "ebooks/AI Skills Every IT Professional Needs by 2027.pdf",
+      "cover": "ebooks/covers/ai-skills-2027.svg",
+      "format": "PDF",
+      "audience": "IT professionals",
+      "featured": true
+    },
+    {
+      "id": "ai-front-line",
+      "title": "AI on the Front Line",
+      "subtitle": "Seattle · Greater Seattle · Washington State",
+      "description": "A field guide for Seattle-area police, fire & EMS — covering local AI use, prosecutorial limits, statewide rules, wildfire cameras, and 911 — plus the policies catching up.",
+      "file": "ebooks/AI-on-the-Front-Line-Seattle-First-Responders.pdf",
+      "cover": "ebooks/covers/ai-front-line.svg",
+      "format": "PDF",
+      "audience": "First responders & partners",
+      "featured": true
+    },
+    {
+      "id": "tech-confidence",
+      "title": "From Anxiety to Confidence",
+      "subtitle": "School of Technology and Computing",
+      "description": "A realistic, research-backed guide for career changers starting a tech degree — imposter syndrome, adult learners, learning techniques that work, and building your support network.",
+      "file": "ebooks/cityu_anxiety_to_confidence_ebook.pdf",
+      "cover": "ebooks/covers/tech-confidence.svg",
+      "format": "PDF",
+      "audience": "Career changers & students",
+      "featured": true
+    }
+  ]
+}
