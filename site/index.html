@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CityU Guides — Free eBooks</title>
+    <meta
+      name="description"
+      content="Download free CityU guides on academic programs, industry pathways, and building confidence in technology."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,400&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" id="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span class="brand-name">CityU Guides</span>
+      </a>
+      <nav class="nav">
+        <a href="#library">Library</a>
+        <a href="#how">How it works</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Free resource library</p>
+          <h1 class="brand-hero" id="brand-hero">CityU Guides</h1>
+          <p class="lede" id="tagline">
+            Practical resources for students, partners, and career changers.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#library">Browse guides</a>
+            <a class="btn btn-ghost" href="#how">How downloads work</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-stack">
+            <div class="spine spine-a"></div>
+            <div class="spine spine-b"></div>
+            <div class="spine spine-c"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="library" id="library">
+        <div class="section-head">
+          <h2>The library</h2>
+          <p>Pick a guide, complete a short form, and download instantly.</p>
+        </div>
+        <div class="book-grid" id="book-grid" aria-live="polite">
+          <div class="loading">Loading guides…</div>
+        </div>
+      </section>
+
+      <section class="how" id="how">
+        <div class="section-head">
+          <h2>How it works</h2>
+          <p>Three steps. No account required.</p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-num">01</span>
+            <h3>Choose a guide</h3>
+            <p>Browse the library and open the guide you want.</p>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <h3>Share a few details</h3>
+            <p>Complete the embedded Google Form so we can follow up with relevant opportunities.</p>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <h3>Download instantly</h3>
+            <p>After you submit, your download unlocks right on this page.</p>
+          </li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <a href="https://cityu.edu/" target="_blank" rel="noopener">City University of Seattle</a>
+      </p>
+    </footer>
+
+    <dialog class="gate" id="gate" aria-labelledby="gate-title">
+      <div class="gate-shell">
+        <button class="gate-close" type="button" id="gate-close" aria-label="Close">
+          ×
+        </button>
+
+        <div class="gate-panel gate-intro" id="gate-intro">
+          <div class="gate-book">
+            <img id="gate-cover" alt="" />
+            <div>
+              <p class="eyebrow" id="gate-eyebrow">Gated download</p>
+              <h2 id="gate-title">Download your free guide</h2>
+              <p id="gate-subtitle"></p>
+              <p class="gate-selected">
+                Selected: <strong id="gate-book-title"></strong>
+              </p>
+            </div>
+          </div>
+          <div class="form-frame-wrap">
+            <iframe
+              id="gate-form"
+              title="Download request form"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <p class="gate-fallback">
+            Form not loading?
+            <a id="gate-external" href="https://forms.gle/LaEY1GUvLLZEyAtQ6" target="_blank" rel="noopener"
+              >Open it in a new tab</a
+            >, then
+            <button type="button" class="linkish" id="gate-unlock-manual">
+              unlock your download
+            </button>
+            .
+          </p>
+        </div>
+
+        <div class="gate-panel gate-success" id="gate-success" hidden>
+          <p class="eyebrow">You’re in</p>
+          <h2>Thanks — your guide is ready</h2>
+          <p id="success-copy">
+            Your download is unlocked for this browser session.
+          </p>
+          <a class="btn btn-primary" id="gate-download" href="#" download>Download guide</a>
+          <button type="button" class="btn btn-ghost" id="gate-done">Close</button>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>

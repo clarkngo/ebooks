@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" role="img" aria-label="From Anxiety to Confidence cover">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#001321"/>
+      <stop offset="55%" stop-color="#0a253f"/>
+      <stop offset="100%" stop-color="#0d3d4a"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0.2" y1="0" x2="0.8" y2="1">
+      <stop offset="0%" stop-color="#00a3af" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#00a3af" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grain" width="80" height="80" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="12" r="1" fill="#fff" opacity="0.06"/>
+      <circle cx="42" cy="28" r="1.2" fill="#fff" opacity="0.05"/>
+      <circle cx="66" cy="54" r="1" fill="#000" opacity="0.08"/>
+      <circle cx="22" cy="68" r="0.8" fill="#fff" opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="640" height="900" fill="url(#bg)"/>
+  <circle cx="520" cy="160" r="220" fill="url(#glow)"/>
+  <rect width="640" height="900" fill="url(#grain)"/>
+  <rect x="48" y="48" width="544" height="804" fill="none" stroke="#8ad3d6" stroke-opacity="0.4" stroke-width="1.5"/>
+  <text x="80" y="140" fill="#8ad3d6" font-family="Georgia, serif" font-size="22" letter-spacing="4">CITYU GUIDES</text>
+  <text x="80" y="320" fill="#ffffff" font-family="Georgia, serif" font-size="58" font-weight="700">From Anxiety</text>
+  <text x="80" y="390" fill="#ffffff" font-family="Georgia, serif" font-size="58" font-weight="700">to Confidence</text>
+  <line x1="80" y1="430" x2="220" y2="430" stroke="#faa31b" stroke-width="3"/>
+  <text x="80" y="490" fill="#c5e9eb" font-family="Helvetica, Arial, sans-serif" font-size="22">
+    <tspan x="80" dy="0">A guide for career changers</tspan>
+    <tspan x="80" dy="32">starting a tech degree</tspan>
+  </text>
+  <text x="80" y="780" fill="#8ad3d6" font-family="Helvetica, Arial, sans-serif" font-size="16" letter-spacing="2">FREE DOWNLOAD</text>
+</svg>
