@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Waymark — Free ebooks</title>
+    <title>Clark's Ebooks</title>
     <meta
       name="description"
-      content="Waymark Library — free playbooks and original fiction. Browse a title, share a few details, download on the spot."
+      content="Clark's Ebooks — original fiction. Browse a title and download instantly."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,24 +22,22 @@
     <header class="site-header">
       <a class="brand" href="#top" id="brand">
         <span class="brand-mark" aria-hidden="true"></span>
-        <span class="brand-name">Waymark</span>
+        <span class="brand-name">Clark's Ebooks</span>
       </a>
       <nav class="nav" aria-label="Primary">
         <a href="#library">Library</a>
-        <a href="#how">How it works</a>
       </nav>
     </header>
 
     <main id="top">
       <section class="hero">
         <div class="hero-copy">
-          <h1 class="brand-hero" id="brand-hero">Waymark</h1>
+          <h1 class="brand-hero" id="brand-hero">Clark's Ebooks</h1>
           <p class="lede" id="tagline">
-            Practical playbooks for people who build for a living.
+            Original fiction — browse and download.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#library">Browse guides</a>
-            <a class="btn btn-ghost" href="#how">How unlocks work</a>
+            <a class="btn btn-primary" href="#library">Browse the shelf</a>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -55,86 +53,22 @@
       <section class="library" id="library">
         <div class="section-head">
           <h2>The shelf</h2>
-          <p>Choose a guide, finish the short form, download on this page.</p>
+          <p>Pick a title and download it — no signup required.</p>
         </div>
         <div class="book-grid" id="book-grid" aria-live="polite">
-          <div class="loading">Loading guides…</div>
+          <div class="loading">Loading ebooks…</div>
         </div>
-      </section>
-
-      <section class="how" id="how">
-        <div class="section-head">
-          <h2>How it works</h2>
-          <p>Three steps. No account required.</p>
-        </div>
-        <ol class="steps">
-          <li>
-            <span class="step-num">01</span>
-            <h3>Choose a guide</h3>
-            <p>Browse the shelf and open the playbook you need.</p>
-          </li>
-          <li>
-            <span class="step-num">02</span>
-            <h3>Share a few details</h3>
-            <p>Complete the short embedded form so we can send updates that fit your work.</p>
-          </li>
-          <li>
-            <span class="step-num">03</span>
-            <h3>Download unlocks</h3>
-            <p>After you submit, the file unlocks right here — no inbox scavenger hunt.</p>
-          </li>
-        </ol>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Waymark Library · Free guides for builders</p>
+      <p>
+        Built by
+        <a href="https://www.linkedin.com/in/clarkngo/" target="_blank" rel="noopener"
+          >Clark Ngo</a
+        >
+      </p>
     </footer>
-
-    <dialog class="gate" id="gate" aria-labelledby="gate-title">
-      <div class="gate-shell">
-        <button class="gate-close" type="button" id="gate-close" aria-label="Close dialog">
-          ×
-        </button>
-
-        <div class="gate-panel gate-intro" id="gate-intro">
-          <div class="gate-book">
-            <img id="gate-cover" alt="" width="110" height="148" />
-            <div>
-              <p class="eyebrow" id="gate-eyebrow">Gated download</p>
-              <h2 id="gate-title">Unlock this guide</h2>
-              <p id="gate-subtitle"></p>
-              <p class="gate-selected">
-                Selected: <strong id="gate-book-title"></strong>
-              </p>
-            </div>
-          </div>
-          <div class="form-frame-wrap">
-            <iframe id="gate-form" title="Download request form" loading="lazy"></iframe>
-          </div>
-          <p class="gate-fallback">
-            Form not loading?
-            <a id="gate-external" href="gate/form.html" target="_blank" rel="noopener"
-              >Open it in a new tab</a
-            >, then
-            <button type="button" class="linkish" id="gate-unlock-manual">
-              unlock your download
-            </button>
-            .
-          </p>
-        </div>
-
-        <div class="gate-panel gate-success" id="gate-success" hidden>
-          <p class="eyebrow">Unlocked</p>
-          <h2>Your guide is ready</h2>
-          <p id="success-copy">
-            Download stays available for the rest of this browser session.
-          </p>
-          <a class="btn btn-primary" id="gate-download" href="#" download>Download guide</a>
-          <button type="button" class="btn btn-ghost" id="gate-done">Close</button>
-        </div>
-      </div>
-    </dialog>
 
     <script src="js/app.js" type="module"></script>
   </body>

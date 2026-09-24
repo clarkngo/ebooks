@@ -146,8 +146,8 @@ img {
 .brand-hero {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(3.6rem, 10vw, 7rem);
-  line-height: 0.92;
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
+  line-height: 0.95;
   font-weight: 800;
   letter-spacing: -0.04em;
   color: var(--ink);
@@ -273,12 +273,8 @@ img {
   box-shadow: 0 0 0 6px rgba(198, 232, 91, 0.55);
 }
 
-.library,
-.how {
-  padding: clamp(3rem, 8vh, 5.5rem) clamp(1.25rem, 4vw, 3.5rem);
-}
-
 .library {
+  padding: clamp(3rem, 8vh, 5.5rem) clamp(1.25rem, 4vw, 3.5rem);
   background: var(--white);
   border-radius: 2rem 2rem 0 0;
   box-shadow: 0 -12px 40px rgba(20, 32, 51, 0.05);
@@ -385,44 +381,6 @@ img {
   border-radius: 6px;
 }
 
-.how {
-  background: var(--slate);
-  color: var(--sand);
-}
-
-.how .section-head p {
-  color: rgba(240, 235, 227, 0.72);
-}
-
-.steps {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-}
-
-.step-num {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 2rem;
-  color: var(--lime);
-  margin-bottom: 0.75rem;
-  letter-spacing: -0.03em;
-}
-
-.steps h3 {
-  margin: 0;
-  font-size: 1.2rem;
-  color: var(--white);
-}
-
-.steps p {
-  margin: 0.55rem 0 0;
-  color: rgba(240, 235, 227, 0.72);
-}
-
 .site-footer {
   padding: 1.5rem clamp(1.25rem, 4vw, 3.5rem) 2.5rem;
   background: #101823;
@@ -430,152 +388,15 @@ img {
   font-size: 0.92rem;
 }
 
-.eyebrow {
-  margin: 0 0 0.55rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--cobalt);
+.site-footer a {
+  color: var(--lime);
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.gate {
-  width: min(920px, calc(100vw - 2rem));
-  max-height: calc(100vh - 2rem);
-  padding: 0;
-  border: 0;
-  border-radius: 22px;
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: var(--shadow);
-  overflow: auto;
-}
-
-.gate::backdrop {
-  background: rgba(20, 32, 51, 0.62);
-  backdrop-filter: blur(6px);
-}
-
-.gate-shell {
-  position: relative;
-  padding: clamp(1.25rem, 3vw, 2rem);
-}
-
-.gate-panel[hidden] {
-  display: none !important;
-}
-
-.gate-close {
-  position: absolute;
-  top: 0.85rem;
-  right: 0.85rem;
-  width: 2.4rem;
-  height: 2.4rem;
-  border: 0;
-  border-radius: 999px;
-  background: rgba(20, 32, 51, 0.08);
-  color: var(--ink);
-  font-size: 1.5rem;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.gate-close:focus-visible {
-  outline: 3px solid rgba(47, 91, 234, 0.45);
-}
-
-.gate-book {
-  display: grid;
-  grid-template-columns: 110px 1fr;
-  gap: 1rem;
-  align-items: start;
-  margin-bottom: 1rem;
-  padding-right: 2rem;
-}
-
-.gate-book img {
-  width: 110px;
-  aspect-ratio: 4 / 5.4;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 10px 24px rgba(20, 32, 51, 0.16);
-}
-
-.gate-book h2 {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  line-height: 1.1;
-  letter-spacing: -0.02em;
-}
-
-.gate-book p {
-  margin: 0.55rem 0 0;
-  color: var(--muted);
-}
-
-.gate-selected {
-  color: var(--ink) !important;
-}
-
-.form-frame-wrap {
-  width: 100%;
-  min-height: 520px;
-  border-radius: 14px;
-  overflow: hidden;
-  background: var(--white);
-  border: 1px solid var(--line);
-}
-
-.form-frame-wrap iframe {
-  width: 100%;
-  height: 640px;
-  border: 0;
-  display: block;
-}
-
-.gate-fallback {
-  margin: 0.9rem 0 0;
-  font-size: 0.92rem;
-  color: var(--muted);
-}
-
-.linkish {
-  border: 0;
-  background: none;
-  padding: 0;
-  color: var(--cobalt);
-  font: inherit;
-  font-weight: 700;
+.site-footer a:hover,
+.site-footer a:focus-visible {
   text-decoration: underline;
-  cursor: pointer;
-}
-
-.gate-success {
-  text-align: center;
-  padding: 2.5rem 1rem 1.5rem;
-}
-
-.gate-success h2 {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
-  letter-spacing: -0.02em;
-}
-
-.gate-success p {
-  color: var(--muted);
-  max-width: 28rem;
-  margin: 0.75rem auto 1.5rem;
-}
-
-.gate-success .btn {
-  margin: 0.35rem;
-}
-
-.gate-success .btn-ghost {
-  background: transparent;
-  color: var(--ink);
 }
 
 @keyframes rise {
@@ -650,20 +471,6 @@ img {
 
   .hero-compass {
     width: min(100%, 200px);
-  }
-
-  .steps {
-    grid-template-columns: 1fr;
-  }
-
-  .gate-book {
-    grid-template-columns: 84px 1fr;
-  }
-
-  .form-frame-wrap,
-  .form-frame-wrap iframe {
-    min-height: 480px;
-    height: 520px;
   }
 }
 
