@@ -1,6 +1,6 @@
-# Waymark site notes
+# Clark's Ebooks — site notes
 
-Static gated library. Public brand is **Waymark** — do not reuse CityU / City University naming, covers, or copy from reference projects.
+Static open library. Public brand is **Clark's Ebooks**.
 
 ## Brand tokens
 
@@ -13,10 +13,4 @@ Static gated library. Public brand is **Waymark** — do not reuse CityU / City 
 | Display | **Syne** |
 | Body | **Figtree** |
 
-Keep maintainer instructions out of the public UI footer/hero.
-
-## Unlock
-
-- `sessionStorage` key: `waymark-library-unlocked`
-- Iframe second load ≈ post-submit confirmation
-- Manual unlock fallback in the gate dialog
+Footer credit: Built by Clark Ngo → https://www.linkedin.com/in/clarkngo/

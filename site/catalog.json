@@ -1,13 +1,7 @@
 {
   "brand": {
-    "name": "Waymark",
-    "tagline": "Practical playbooks and original fiction for people who build for a living."
-  },
-  "gate": {
-    "formEmbedUrl": "gate/form.html",
-    "formShareUrl": "gate/form.html",
-    "title": "Unlock this guide",
-    "subtitle": "Share a few details below. When you submit, your download unlocks on this page."
+    "name": "Clark's Ebooks",
+    "tagline": "Original fiction — browse and download."
   },
   "books": [
     {
@@ -57,39 +51,6 @@
       "audience": "Fiction",
       "featured": true,
       "companion": "https://clarkngo.github.io/project-ouroboros/"
-    },
-    {
-      "id": "async-standup",
-      "title": "The Async Standup Playbook",
-      "subtitle": "Remote & hybrid teams",
-      "description": "Replace the daily meeting with a written pulse that keeps blockers visible and deep work protected.",
-      "file": "ebooks/async-standup-playbook.pdf",
-      "cover": "ebooks/covers/async-standup.svg",
-      "format": "PDF",
-      "audience": "Team leads",
-      "featured": true
-    },
-    {
-      "id": "pricing-without-panic",
-      "title": "Pricing Without Panic",
-      "subtitle": "For independents",
-      "description": "A calm framework for setting rates, packaging offers, and saying the number without second-guessing.",
-      "file": "ebooks/pricing-without-panic.pdf",
-      "cover": "ebooks/covers/pricing-without-panic.svg",
-      "format": "PDF",
-      "audience": "Consultants & freelancers",
-      "featured": true
-    },
-    {
-      "id": "write-it-once",
-      "title": "Write It Once",
-      "subtitle": "Docs that stick",
-      "description": "Lightweight documentation habits — checklists, decision logs, and expiry rules — that outlast the sprint.",
-      "file": "ebooks/write-it-once.pdf",
-      "cover": "ebooks/covers/write-it-once.svg",
-      "format": "PDF",
-      "audience": "Builders & PMs",
-      "featured": true
     }
   ]
 }
