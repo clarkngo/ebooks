@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 540" role="img" aria-label="Write It Once cover">
+  <rect width="400" height="540" fill="#c6e85b"/>
+  <rect x="36" y="48" width="328" height="444" rx="18" fill="#142033"/>
+  <rect x="64" y="96" width="180" height="14" rx="7" fill="#2f5bea"/>
+  <rect x="64" y="130" width="240" height="10" rx="5" fill="#f0ebe3" opacity="0.35"/>
+  <rect x="64" y="156" width="210" height="10" rx="5" fill="#f0ebe3" opacity="0.35"/>
+  <rect x="64" y="182" width="250" height="10" rx="5" fill="#f0ebe3" opacity="0.35"/>
+  <text x="64" y="320" fill="#f0ebe3" font-family="Syne, Arial Black, sans-serif" font-size="40" font-weight="800">Write</text>
+  <text x="64" y="368" fill="#c6e85b" font-family="Syne, Arial Black, sans-serif" font-size="40" font-weight="800">It Once</text>
+  <text x="64" y="440" fill="#f0ebe3" font-family="Figtree, Arial, sans-serif" font-size="14" opacity="0.7">WAYMARK</text>
+</svg>
