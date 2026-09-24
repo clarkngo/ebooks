@@ -1,7 +1,7 @@
 {
   "brand": {
     "name": "Clark's Ebooks",
-    "tagline": "Original fiction — browse and download."
+    "tagline": "Original fiction — browse and read online."
   },
   "books": [
     {
@@ -9,48 +9,48 @@
       "title": "The Last Lithoi — Book One",
       "subtitle": "Project Lithos",
       "description": "A brass conduit, three slots, and a debt the body keeps — Book One of the speculative fantasy trilogy.",
-      "file": "https://clarkngo.github.io/project-lithos/manuscript/the-last-lithoi-book-1.pdf",
+      "readUrl": "https://clarkngo.github.io/project-lithos/novel/book-1/",
       "cover": "ebooks/covers/lithos-book-1.png",
-      "format": "PDF",
+      "format": "Online",
       "audience": "Fiction",
       "featured": true,
-      "companion": "https://clarkngo.github.io/project-lithos/"
+      "cta": "Read online"
     },
     {
       "id": "lithos-book-2",
       "title": "The Last Lithoi — Book Two",
       "subtitle": "Project Lithos",
       "description": "The middle volume of The Last Lithoi — Resonance costs mount as Guild, Warden, and Synod collide.",
-      "file": "https://clarkngo.github.io/project-lithos/manuscript/the-last-lithoi-book-2.pdf",
+      "readUrl": "https://clarkngo.github.io/project-lithos/novel/book-2/",
       "cover": "ebooks/covers/lithos-book-2.png",
-      "format": "PDF",
+      "format": "Online",
       "audience": "Fiction",
       "featured": true,
-      "companion": "https://clarkngo.github.io/project-lithos/"
+      "cta": "Read online"
     },
     {
       "id": "lithos-book-3",
       "title": "The Last Lithoi — Book Three",
       "subtitle": "Project Lithos",
       "description": "The Spire’s Reckoning — the trilogy’s closing volume from the Project Lithos Field Codex.",
-      "file": "https://clarkngo.github.io/project-lithos/manuscript/the-last-lithoi-book-3.pdf",
+      "readUrl": "https://clarkngo.github.io/project-lithos/novel/book-3/",
       "cover": "ebooks/covers/lithos-book-3.png",
-      "format": "PDF",
+      "format": "Online",
       "audience": "Fiction",
       "featured": true,
-      "companion": "https://clarkngo.github.io/project-lithos/"
+      "cta": "Read online"
     },
     {
       "id": "ouroboros",
       "title": "Project Ouroboros",
       "subtitle": "A novel of runaway AI",
       "description": "Meridian sells autonomous operations — then has to build the harness that can survive its own ambition. Twenty-four chapters across three acts.",
-      "file": "ebooks/project-ouroboros.epub",
+      "readUrl": "https://clarkngo.github.io/project-ouroboros/novel/",
       "cover": "ebooks/covers/ouroboros.png",
-      "format": "EPUB",
+      "format": "Online",
       "audience": "Fiction",
       "featured": true,
-      "companion": "https://clarkngo.github.io/project-ouroboros/"
+      "cta": "Read online"
     }
   ]
 }

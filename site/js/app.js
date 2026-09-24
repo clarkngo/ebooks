@@ -1,37 +1,14 @@
 const els = {
   brand: document.getElementById("brand"),
-  brandHero: document.getElementById("brand-hero"),
-  tagline: document.getElementById("tagline"),
   grid: document.getElementById("book-grid"),
 };
 
 let catalog = null;
 
-function fileName(path) {
-  try {
-    const cleaned = path.split("?")[0];
-    return cleaned.split("/").pop() || "ebook";
-  } catch {
-    return "ebook";
-  }
-}
-
-function isExternalUrl(path) {
-  return /^https?:\/\//i.test(path);
-}
-
-function triggerDownload(book) {
-  const link = document.createElement("a");
-  link.href = book.file;
-  link.rel = "noopener";
-  if (isExternalUrl(book.file)) {
-    link.target = "_blank";
-  } else {
-    link.download = fileName(book.file);
-  }
-  document.body.appendChild(link);
-  link.click();
-  link.remove();
+function openRead(book) {
+  const url = book.readUrl || book.companion || book.file;
+  if (!url) return;
+  window.open(url, "_blank", "noopener,noreferrer");
 }
 
 function renderBooks(books) {
@@ -48,14 +25,14 @@ function renderBooks(books) {
     article.style.animationDelay = `${index * 80}ms`;
 
     const tags = [book.format, book.audience].filter(Boolean);
-    const label = book.cta || "Download";
+    const label = book.cta || "Read online";
 
     article.innerHTML = `
       <div class="book-cover">
         <img src="${book.cover}" alt="" width="320" height="432" loading="lazy" />
       </div>
       <div class="book-meta">
-        <h3>${book.title}</h3>
+        <h2>${book.title}</h2>
         ${book.subtitle ? `<p class="subtitle">${book.subtitle}</p>` : ""}
         <p class="description">${book.description}</p>
         <div class="book-tags">
@@ -69,7 +46,7 @@ function renderBooks(books) {
     coverImg.alt = `Cover for ${book.title}`;
 
     article.querySelector("button").addEventListener("click", () => {
-      triggerDownload(book);
+      openRead(book);
     });
 
     els.grid.appendChild(article);
@@ -84,12 +61,7 @@ async function init() {
 
   if (catalog.brand?.name) {
     document.title = catalog.brand.name;
-    els.brandHero.textContent = catalog.brand.name;
     els.brand.querySelector(".brand-name").textContent = catalog.brand.name;
-  }
-
-  if (catalog.brand?.tagline) {
-    els.tagline.textContent = catalog.brand.tagline;
   }
 
   renderBooks(catalog.books || []);
