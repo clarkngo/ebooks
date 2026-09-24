@@ -6,12 +6,12 @@
     <title>Clark's Ebooks</title>
     <meta
       name="description"
-      content="Clark's Ebooks — original fiction. Browse a title and read online."
+      content="Clark's Ebooks — original fiction from The Last Lithoi and Project Ouroboros. Read online."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -24,18 +24,22 @@
         <span class="brand-mark" aria-hidden="true"></span>
         <span class="brand-name">Clark's Ebooks</span>
       </a>
+      <p class="header-note" id="tagline">Original fiction, read in the browser.</p>
     </header>
 
-    <main>
-      <section class="library" id="library">
-        <div class="section-head">
-          <h1>The shelf</h1>
-          <p>Pick a title and read it online — no signup required.</p>
-        </div>
-        <div class="book-grid" id="book-grid" aria-live="polite">
-          <div class="loading">Loading ebooks…</div>
-        </div>
-      </section>
+    <main id="library">
+      <div class="intro">
+        <p class="intro-kicker">The shelf</p>
+        <h1>Two series. Open a cover to begin.</h1>
+        <p class="intro-lede">
+          Speculative fantasy in the deep strata, and a business novel about runaway agents —
+          written by Clark Ngo, readable chapter by chapter.
+        </p>
+      </div>
+
+      <div id="series-root" aria-live="polite">
+        <p class="loading">Loading the shelf…</p>
+      </div>
     </main>
 
     <footer class="site-footer">

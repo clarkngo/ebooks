@@ -1,6 +1,6 @@
 # Clark's Ebooks
 
-Static ebook library — original fiction. Browse and read online; no signup.
+Static fiction shelf for **Clark's Ebooks** — The Last Lithoi and Project Ouroboros, read online.
 
 Live path (GitHub Pages project site): `https://<user>.github.io/ebooks/`
 
